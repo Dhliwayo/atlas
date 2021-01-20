@@ -1,5 +1,6 @@
 package org.openstreetmap.atlas.sample;
 
+import java.lang.System.Logger;
 import java.nio.file.Path;
 import java.util.Comparator;
 import java.util.Random;

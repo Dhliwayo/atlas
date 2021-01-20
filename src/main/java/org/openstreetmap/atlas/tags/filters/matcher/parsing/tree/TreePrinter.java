@@ -71,11 +71,11 @@ public final class TreePrinter
                     {
                         if (line.get(lineElementIndex - 1) != null)
                         {
-                            boxCharacter = (line.get(lineElementIndex) != null) ? '┴' : '┘';
+//                            boxCharacter = (line.get(lineElementIndex) != null) ? 'â”´' : 'â”˜';
                         }
                         else if (line.get(lineElementIndex) != null)
                         {
-                            boxCharacter = '└';
+//                            boxCharacter = 'â””';
                         }
                     }
                     treeString.append(boxCharacter);
@@ -93,10 +93,10 @@ public final class TreePrinter
                      */
                     else
                     {
-                        treeString.append((isEven(lineElementIndex) ? " " : "─")
+                        treeString.append((isEven(lineElementIndex) ? " " : "â”€")
                                 .repeat(Math.max(0, nodeLeftRightPadding)));
-                        treeString.append(isEven(lineElementIndex) ? "┌" : "┐");
-                        treeString.append((isEven(lineElementIndex) ? "─" : " ")
+                        treeString.append(isEven(lineElementIndex) ? "â”Œ" : "â”�");
+                        treeString.append((isEven(lineElementIndex) ? "â”€" : " ")
                                 .repeat(Math.max(0, nodeLeftRightPadding)));
                     }
                 }

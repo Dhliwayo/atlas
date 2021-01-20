@@ -4,18 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.apache.commons.lang3.StringUtils;
 import org.openstreetmap.atlas.exception.CoreException;
 import org.openstreetmap.atlas.geography.Location;
 import org.openstreetmap.atlas.geography.PolyLine;
 import org.openstreetmap.atlas.geography.atlas.change.description.ChangeDescriptorType;
 
-import com.github.difflib.DiffUtils;
-import com.github.difflib.algorithm.DiffException;
-import com.github.difflib.patch.AbstractDelta;
-import com.github.difflib.patch.Patch;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
+import com.sun.tools.javac.util.StringUtils;
 
 /**
  * A {@link ChangeDescriptor} for geometry changes. Utilizes a granular diff algorithm to show the
